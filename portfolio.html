@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio</title>
+
+
+
+<style>
+
+.menu{
+    background-color:gainsboro;
+    font-family:Arial, Helvetica, sans-serif;
+    width: 150%;
+    height:70%;
+}  
+.menu img{
+     margin-left: 20px;
+    margin-top: 0;
+    min-height: 50px;
+}
+.nav bar{
+    margin-left: 500px;
+    margin-right: 500px;
+}
+.menu ul{
+    margin-left: 80px;
+}
+.menu ul a li{
+    display: inline-block;
+    margin-right: 40px;
+    color:white;
+    font-size: 20px;
+    font-weight: bolder;
+    margin-top: 2px;
+    color:black;
+}
+.menu ul a li:hover{
+    color:white;
+    border-bottom:3px solid white;
+    padding-bottom: 20px;
+}
+.first_box{
+    width:100%;
+    height:400%;
+    text-align: center;
+    background-image:url(https://ak4.picdn.net/shutterstock/videos/4001974/thumb/1.jpg);
+}
+.first_box h1{
+font-family: Arial, Helvetica, sans-serif;
+font-weight: bolder;
+font-size: 50px;
+color:white;
+padding-top: 5px;   
+}
+.first_box p{
+width: 50%;
+color:white;
+font-family: Arial, Helvetica, sans-serif;
+padding-top: 30px;
+text-align:center;
+padding-left: 25%;
+padding-right: 25%;
+padding-bottom: 50px;
+}
+
+.btn{
+display:inline-block;
+padding: 10px 15px; 
+font-size: 20px;
+cursor:pointer;
+text-decoration:none;
+border:none;
+color: #070707;
+background-color: #75602ae0;
+border-radius: 25px;
+padding-bottom:10px;
+margin-bottom: 25px;
+}
+
+
+
+.OUR_ADVANTAGE{
+min-width: 150px;
+height:350px;
+background-color:white;
+text-align: center;
+}
+.OUR_ADVANTAGE h1{
+font-family: Arial, Helvetica, sans-serif;
+font-weight: bolder;
+font-size: 50px;
+color: black;
+padding-top: 50px;
+}
+.OUR_ADVANTAGE p{
+width: 50%;
+color:#000;
+font-family: Arial, Helvetica, sans-serif;
+padding-top: 6px;
+text-align:center;
+padding-left: 25%;
+padding-right: 25%;
+padding-bottom: 10px;
+}
+.advantages_box{
+width: 19%;
+background-color:white;
+overflow: auto;
+margin-right: 5px;
+margin-left: 5px;
+margin-bottom: 20px;
+text-align: center;
+float: left;
+cursor: pointer;
+display: block;
+height:300px;
+}
+.advantages_box:hover{
+box-shadow: 4px 4px 8px 0px rgb(36, 90, 90);
+}
+.advantage h3{
+font-family: Arial, Helvetica, sans-serif;
+padding: 0 auto;
+}
+.advantage p{
+font-family: Arial, Helvetica, sans-serif;
+padding: 0 auto;
+text-align: center;
+font-size: 12px;
+min-width: 2px;
+margin-top: 25px;
+}
+.advantages_icon{
+width:15%;
+}
+
+
+.ABOUT_US{
+min-width: 150px;
+height:350px;
+background-image:url("data:image/jpeg;base64,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");
+padding:0 auto; 
+ margin-top: 25%; 
+ margin-bottom: 5%; 
+text-align: center;
+}
+.ABOUT_US h1{
+font-family: Arial, Helvetica, sans-serif;
+ font-weight: bolder;
+font-size: 50px;
+color: black;
+padding-top: 25px;
+text-align: center;
+}
+.ABOUT_US p{
+width: 50%;
+color:#000;
+font-family: Arial, Helvetica, sans-serif;
+padding-top: 6px;
+text-align:center;
+padding-left: 25%;
+padding-right: 25%;
+padding-bottom: 10px;
+
+}
+.btn{
+display:inline-block;
+padding: 10px; 
+font-size: 20px;
+cursor:pointer;
+text-decoration:none;
+border:none;
+color: #070707;
+background-color: #75602ae0;
+border-radius: 25px;
+padding-bottom:10px;
+text-align: center;
+}
+.btn{
+/* margin-left: 600px; */
+background-color:#75602ae0 ;
+}
+
+.OUR_SERVICES{ 
+    width: 100%;
+    min-height: 75px;
+    background-color:white;
+    text-align: center;
+    float: right;
+}
+ .OUR_SERVICES h1{ 
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 50px;
+    color: black;
+    padding-top: 40px;
+}
+.OUR_SERVICES p{ 
+    width:50%;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 10px;
+    text-align: center;
+    padding-left: 25%;
+    padding-right: 25%;
+    padding-bottom: 10px;
+}
+ .service_box{ 
+    width: 22%;
+    min-height: 50px;
+    background-position: center;
+    background-size: cover;
+    background-color:white;
+    margin: 5px 15px 5px 15px;
+    text-align: center;
+    cursor: pointer;
+    float: left;
+}
+.service_box:hover{ 
+    box-shadow: 2px 8px 3px 4px rgb(36, 90, 90);
+}
+.service_box h3:hover{
+     color:rgb(36, 90, 90);
+}
+
+
+.OUR_PORTFOLIO{
+    width: 100%;
+    min-height: 75px;
+    background-color:white;
+    text-align: center;
+    float: right;
+}
+.OUR_PORTFOLIO h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 50px;
+    color: black;
+    padding-top: 40px; 
+}
+.OUR_PORTFOLIO p{
+    width:50%;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 10px;
+    text-align: center;
+    padding-left: 25%;
+    padding-right: 25%;
+    padding-bottom: 10px;
+}
+.OUR_PORTFOLIO ul {
+    
+    font-size: 22px;
+    display: inline;
+}
+.OUR_PORTFOLIO li{
+     display: inline;
+     margin-right: 40px;
+     color:black;
+     font-size: 20px;
+     font-weight: bolder;
+}
+.OUR_PORTFOLIO li:hover{
+    color:rgb(36, 90, 90);
+}
+
+
+.OUR_SKILLS{
+    width: 100%;
+    min-height: 75px;
+    background-color:white;
+    text-align: center;
+    float: right;
+}
+.OUR_SKILLS h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 50px;
+    color: black;
+    padding-top: 40px; 
+}
+.OUR_SKILLS p{
+    width:50%;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 10px;
+    text-align: center;
+    padding-left: 25%;
+    padding-right: 25%;
+    padding-bottom: 10px;
+}
+.OUR_CONTACTS{
+    width: 100%;
+    min-height: 75px;
+    text-align:center;
+    float: right;
+}
+.OUR_CONTACTS h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 50px;
+    color: black;
+    padding-top: 40px; 
+}
+.OUR_CONTACTS p{
+    min-width:50%;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 10px;
+    text-align:center;
+    padding-left: 25%;
+    padding-right: 25%;
+    padding-bottom: 10px;
+}
+.location{
+    min-width:150%;
+    height:50;
+    padding-bottom: 5px;
+}
+.contact_logo{
+    min-width:40px;
+    height:39px;
+}
+
+
+
+
+
+
+
+
+</style>
+    </head>
+
+
+    <body>
+
+        <div class="box">
+            <header>
+                
+        
+        <div class="menu">
+            <div class="logo">
+             <img src="https://www.panacloud.ai/assets/images/global/logo-color.png" alt="logo" style:" width: 100px; height: 60px;"></a> 
+             </div>
+             <div class="nav bar">
+                <ul>
+                    <a href="#"><li>Home</li></a>
+                    <a href="#"><li>Reviews</li></a>
+                    <a href="#"><li>Portfolio</li></a>
+                    <a href="#"><li>Services</li></a>
+                    <a href="#"><li>Our Skills</li></a>
+                    <a href="#"><li>Contact Us</li></a>
+                </ul>
+             </div>
+            </div>
+        </header>
+
+        <div class="first_box">
+            <h1>WE ARE EXPERTS</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam faucibus scelerisque turpis, sit amet tincidunt lectus interdum in. Curabitur molestie quam porta orci lacinia gravida. Nam tincidunt blandit diam, sed euismod tortor. Nam convallis tellus eu quam pellentesque venenatis. Aliquam erat volutpat. Donec condimentum elit eu faucibus vulputate. Duis gravida tellus ut lorem dictum blandit.</p>
+            <button type="button" class="btn" >READ MORE</button>
+        </div>
+
+        <div class="OUR_ADVANTAGE">
+            <h1>OUR <span style="color: #113f4b;">ADVANTAGE</span> </h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam faucibus scelerisque turpis, sit amet tincidunt lectus interdum in. Curabitur molestie quam porta orci lacinia gravida. Nam tincidunt blandit diam, sed euismod tortor. Nam convallis tellus eu quam pellentesque venenatis. Aliquam erat volutpat. Donec condimentum elit eu faucibus vulputate. Duis gravida tellus ut lorem dictum blandit.</p>
+           </div>
+            <div class="advantages_box">
+                <img class="advantage_icon" src="https://cdn0.iconfinder.com/data/icons/digital-marketing-101/70/creative__idea__innovation__bulb__light-512.png" style="width:50px"; alt="icon">
+                <h3 class="advantage h3">INNOVATION</h3>
+                <p class="advantage p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam faucibus scelerisque turpis, sit amet tincidunt lorem dictum blandit.</p>
+            </div>
+        
+
+            <div class="advantages_box">
+                <img class="advantage_icon" src="https://www.svgrepo.com/show/40630/thumbs-up.svg" style="width:60px"; alt="icon">
+                <h3 class="advantage h3">QUALITY</h3>
+                <p class="advantage p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam faucibus scelerisque turpis, sit amet tincidunt lorem dictum blandit.</p>
+            </div>
+
+            <div class="advantages_box">
+                <img class="advantage_icon" src="https://cdn0.iconfinder.com/data/icons/feather/96/clock-512.png" style="width:60px"; alt="icon">
+                <h3 class="advantage h3">EXPERIENCE</h3>
+                <p class="advantage p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam faucibus scelerisque turpis, sit amet tincidunt lorem dictum blandit..</p>
+            </div>
+
+
+            <div class="advantages_box">
+                <img class="advantage_icon" src="https://i.ya-webdesign.com/images/happy-vector-client-11.png" style="width:60px"; alt="icon">
+                <h3 class="advantage h3">HAPPY CLIENTS</h3>
+                <p class="advantage p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam faucibus scelerisque turpis, sit amet tincidunt lorem dictum blandit. </p>
+            </div>
+                  
+            <div class="advantages_box">
+                <img class="advantage_icon" src="data:image/png;base64,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" style="width:60px"; alt="icon">
+                <h3 class="advantage h3">SUPPORT</h3>
+                <p class="advantage p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam faucibus scelerisque turpis, sit amet tincidunt lorem dictum blandit..</p>
+            </div>
+            
+
+        <div class="ABOUT_US">
+        <h1>ABOUT <span style="color:#113f4b;;">US</span> </h1>
+        <p>Lorem ipsum dolor si amet, consectetur adipiscing elit. Etiam faucibus scelerisque turpis, sit amet tincidunt lectus interdum in. Curabitur molestie quam porta orci lacinia gravida. Nam tincidunt blandit diam, sed euismod tortor. Nam convallis tellus eu quam pellentesque venenatis. Aliquam erat volutpat. Donec condimentum elit eu faucibus vulputate. Duis gravida tellus ut lorem dictum blandit.</p>
+        <button type="button" class="btn">READ MORE</button> 
+        </div>
+
+
+
+        <div class="OUR_SERVICES">
+        <h1>OUR <span style="color:#113f4b;;">SERVICES</span></h1> 
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam faucibus scelerisque turpis, sit amet tincidunt lectus interdum in. Curabitur molestie quam porta orci lacinia gravida. Nam tincidunt blandit diam, sed euismod tortor. Nam convallis tellus eu quam pellentesque venenatis. Aliquam erat volutpat. Donec condimentum elit eu faucibus vulputate. Duis gravida tellus ut lorem dictum blandit.</p>
+        </div>
+        <div class="service_box">
+            <img class="service icon" src="https://previews.123rf.com/images/ahasoft2000/ahasoft20001510/ahasoft2000151001108/45865638-service-tools-vector-icon-style-is-bicolor-flat-symbol-blue-and-gray-colors-rounded-angles-white-bac.jpg" style="width:60px;" alt="icon">
+             <h3>WEB DESIGN</h3>
+             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam faucibus scelerisque turpis, sit amet tincidunt lectus interdum in. Curabitur molestie quam porta orci lacinia gravida. Nam tincidunt blandit diam, sed euismod tortor. Nam convallis tellus eu quam pellentesque venenatis. Aliquam erat volutpat. Donec condimentum elit eu faucibus vulputate. Duis gravida tellus ut lorem dictum blandit.</p>
+              <a href="#">READ MORE</a>
+        </div>
+        <div class="service_box">
+            <img class="service icon" src="https://previews.123rf.com/images/ahasoft2000/ahasoft20001510/ahasoft2000151001108/45865638-service-tools-vector-icon-style-is-bicolor-flat-symbol-blue-and-gray-colors-rounded-angles-white-bac.jpg" style="width:60px;" alt="icon">
+             <h3>GRAPHIC DESIGN</h3>
+             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam faucibus scelerisque turpis, sit amet tincidunt lectus interdum in. Curabitur molestie quam porta orci lacinia gravida. Nam tincidunt blandit diam, sed euismod tortor. Nam convallis tellus eu quam pellentesque venenatis. Aliquam erat volutpat. Donec condimentum elit eu faucibus vulputate. Duis gravida tellus ut lorem dictum blandit.</p>
+              <a href="#">READ MORE</a>
+        </div>
+        <div class="service_box">
+            <img class="service icon" src="https://previews.123rf.com/images/ahasoft2000/ahasoft20001510/ahasoft2000151001108/45865638-service-tools-vector-icon-style-is-bicolor-flat-symbol-blue-and-gray-colors-rounded-angles-white-bac.jpg" style="width:60px;" alt="icon">
+             <h3>BRANDING</h3>
+             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam faucibus scelerisque turpis, sit amet tincidunt lectus interdum in. Curabitur molestie quam porta orci lacinia gravida. Nam tincidunt blandit diam, sed euismod tortor. Nam convallis tellus eu quam pellentesque venenatis. Aliquam erat volutpat. Donec condimentum elit eu faucibus vulputate. Duis gravida tellus ut lorem dictum blandit.</p>
+              <a href="#">READ MORE</a>
+        </div>
+        <div class="service_box">
+            <img class="service icon" src="https://previews.123rf.com/images/ahasoft2000/ahasoft20001510/ahasoft2000151001108/45865638-service-tools-vector-icon-style-is-bicolor-flat-symbol-blue-and-gray-colors-rounded-angles-white-bac.jpg" style="width:60px;" alt="icon">
+             <h3>MARKETING</h3>
+             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam faucibus scelerisque turpis, sit amet tincidunt lectus interdum in. Curabitur molestie quam porta orci lacinia gravida. Nam tincidunt blandit diam, sed euismod tortor. Nam convallis tellus eu quam pellentesque venenatis. Aliquam erat volutpat. Donec condimentum elit eu faucibus vulputate. Duis gravida tellus ut lorem dictum blandit.</p>
+              <a href="#">READ MORE</a>
+        </div>
+
+
+
+     <div class="OUR_PORTFOLIO">
+         <h1>OUR <span style="color:#113f4b;";>PORTFOLIO</span></h1>
+         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam faucibus scelerisque turpis, sit amet tincidunt lectus interdum in. Curabitur molestie quam porta orci lacinia gravida. Nam tincidunt blandit diam, sed euismod tortor. Nam convallis tellus eu quam pellentesque venenatis. Aliquam erat volutpat. Donec condimentum elit eu faucibus vulputate. Duis gravida tellus ut lorem dictum blandit.</p>
+         <ul>
+             <li>WEB DESIGN</li>
+             <li>GRAPHIC DESIGN</li>
+             <li>BRANDING</li>
+             <li>LOGO</li>
+             <li>MARKETING</li>
+             <li>ADVERTISMENT</li>
+         </ul>    
+     </div>
+            <div class="portfolio_box">
+            <img class="portfolio_icon" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSh8LNrnPrjFZtKOSxzP5gx4w81h5ouStgIetA2wWtvaB1AuZv5&s" width="300px" alt="logo">
+            <img class="portfolio_icon" src="https://s3.envato.com/files/183057877/1.png"width="300px" alt="logo">
+            <img class="portfolio_icon" src="https://image.yayimages.com/1600/photo/social-media-icon-tree-stock-vector-106633102.jpg"width="300px" alt="logo" height="200px">
+            <img class="portfolio_icon" src="https://cdn3.vectorstock.com/i/1000x1000/12/87/success-banner-background-design-concept-vector-21511287.jpg"width="300px" alt="logo" height="200">
+
+        
+        </div>   
+        
+
+     <div class="OUR_SKILLS">
+     <h1>OUR <span style="color:#113f4b;">SKILLS</span></h1>
+     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam faucibus scelerisque turpis, sit amet tincidunt lectus interdum in. Curabitur molestie quam porta orci lacinia gravida. Nam tincidunt blandit diam, sed euismod tortor. Nam convallis tellus eu quam pellentesque venenatis. Aliquam erat volutpat. Donec condimentum elit eu faucibus vulputate. Duis gravida tellus ut lorem dictum blandit.</p>
+     <div class="skills_box">
+      
+     <img class="skill_icon" src="https://image.shutterstock.com/image-vector/60-circle-charts-percentage-infographic-260nw-1050459521.jpg" alt="logo">    
+     <img class="skill_icon" src="https://image.shutterstock.com/image-vector/80-percent-circle-icon-setvector-260nw-1115922077.jpg" alt="logo">
+     <img class="skill_icon" src="https://image.shutterstock.com/image-vector/hundred-percentage-circle-icon-100-260nw-774416755.jpg"  alt="logo">   
+    </div>
+     </div>
+
+
+
+    <div class="OUR_CONTACTS">
+        <h1>OUR <span style="color:#113f4b;">CONTACTS</span></h1>
+     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam faucibus scelerisque.</p>
+    </div>
+     <img class="location" src="https://www.pakimag.com/files/2010/11/Faisal-Mosque-Islamabad-a-Location-Map.jpg" width="150" height="600s" alt="map">
+
+
+    </div>
+    </body>
+    </html>
